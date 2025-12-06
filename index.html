@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Leecomp Pvt Ltd.</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- ================= HEADER ================= -->
+<header class="lc-header">
+  <div class="container lc-header-inner">
+    <!-- Logo -->
+    <a href="#home" class="lc-logo">LeeComp Pvt Ltd.</a>
+
+    <!-- Hamburger (CSS toggle) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+    <label for="menu-toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Desktop & Mobile Navigation -->
+    <nav class="lc-nav">
+      <a href="#home" class="lc-nav-link">Home</a>
+      <a href="#about" class="lc-nav-link">About</a>
+      <a href="#components" class="lc-nav-link">Components</a>
+      <a href="#brands" class="lc-nav-link">Brands</a>
+      <a href="#contact" class="lc-nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========================================= -->
+<!-- HOME / HERO SECTION                       -->
+<!-- ========================================= -->
+<section id="home" class="hero" aria-label="Home" style="position:relative; z-index:1;">
+
+  <!-- Background glow -->
+  <div class="rgb-bg" aria-hidden="true" style="position:absolute; inset:0; z-index:0; pointer-events:none;">
+    <div
+      class="rgb-blob"
+      aria-hidden="true"
+      style="
+        position:absolute;
+        left:50%;
+        top:48px;
+        transform:translateX(-50%);
+        width:560px;
+        height:320px;
+        border-radius:40%;
+        filter:blur(92px);
+        mix-blend-mode:screen;
+        opacity:0.9;
+        background:conic-gradient(
+          from 0deg,
+          rgba(212,175,55,0.28),
+          rgba(245,208,138,0.22),
+          rgba(126,93,255,0.12)
+        );
+      "
+    ></div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-content container" style="position:relative; z-index:2;">
+    <h1 class="brand-title">LeeComp Pvt Ltd.</h1>
+    <p class="slogan">
+      One-stop destination for branded laptops, desktops,
+      high-performance PCs, GPUs, accessories and printers — Pune.
+    </p>
+    <a class="btn-primary" href="#brands">Brands</a>
+  </div>
+</section>
+
+<!-- ================= ABOUT (boxed 2x2 grid — lively bullets & highlights) ================= -->
+<section id="about" class="centered" aria-labelledby="about-heading">
+  <div class="about-graphic-bg" aria-hidden="true">
+    <!-- decorative blurred SVG -->
+    <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" class="about-decor" aria-hidden="true">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop offset="0" stop-color="#7c3aed" stop-opacity="0.10"/>
+          <stop offset="1" stop-color="#a855f7" stop-opacity="0.06"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#g1)"/>
+      <circle cx="680" cy="60" r="90" fill="#7c3aed" fill-opacity="0.04"/>
+      <circle cx="120" cy="320" r="120" fill="#a855f7" fill-opacity="0.03"/>
+    </svg>
+  </div>
+
+  <div class="container lc-about-container">
+    <h2 id="about-heading">About Us <span aria-hidden="true">🛠️🖥️</span></h2>
+    <p class="lead">Delivering <span class="highlight">Technology</span>, <span class="highlight">Trust</span> &amp; <span class="highlight">Performance</span></p>
+
+    <div class="about-grid" role="list" aria-label="About cards">
+
+      <!-- LEFT TOP: LeeComp boxed -->
+      <div class="lc-card about-box reveal" role="article" aria-labelledby="info-title">
+        <div class="about-icon" aria-hidden="true">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none"><path d="M3 21h18" stroke="currentColor" stroke-width="1.2"/><rect x="4" y="7" width="5.5" height="10" rx="0.6" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="10.5" y="3" width="9.5" height="14" rx="0.6" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+        </div>
+        <h3 id="info-title">LeeComp Pvt Ltd. <span class="badge"><strong></strong></span> <span aria-hidden="true">🏢</span></h3>
+        <div class="about-body">
+          <p>
+            LeeComp Pvt Ltd. is one of Pune’s leading wholesalers and retailers of branded laptops, desktops, printers, and computer peripherals. With three exclusive showrooms and a wholesale office on Tilak Road, we deliver genuine products with expert guidance. We are also Pune’s trusted <mark class="chip">PC Builders</mark> for gaming rigs and high-end workstations.
+          </p>
+        </div>
+        <p class="about-note">Components &amp; Peripherals: <span class="inline-list">Graphics Cards · Motherboards · DDR4/DDR5 RAM · NVMe SSDs · PSUs · Cooling · Cases · Monitors</span></p>
+      </div>
+
+      <!-- RIGHT TOP: Our Stores -->
+      <div class="lc-card about-box reveal" role="article" aria-labelledby="stores-title">
+        <div class="about-icon" aria-hidden="true">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none"><path d="M3 7h18" stroke="currentColor" stroke-width="1.2"/><path d="M5 7v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M7 7l1-3h8l1 3" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+        </div>
+        <h3 id="stores-title">Our Stores <span class="badge alt">3 Locations</span> <span aria-hidden="true">🏷️</span></h3>
+        <ul class="lc-bullets contact-bullets lively">
+          <li><span class="dot">•</span> <strong>MSI</strong> Notebooks Exclusive Store <span class="mini">📍</span></li>
+          <li><span class="dot">•</span> <strong>ASUS</strong> Pegasus Exclusive Store <span class="mini">💻</span></li>
+          <li><span class="dot">•</span> Multi-Brand Retail Store <span class="mini">🛒</span></li>
+        </ul>
+        <p class="about-note pulse">Visit our showrooms for demo units, on-site warranties and bulk/wholesale pricing.</p>
+      </div>
+
+      <!-- LEFT BOTTOM: Services / Support -->
+      <div class="lc-card about-box reveal" role="article" aria-labelledby="services-title">
+        <div class="about-icon" aria-hidden="true">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 0 0-9 9v3a3 3 0 0 0 3 3h1" stroke="currentColor" stroke-width="1.2"/><path d="M21 15v-3a9 9 0 0 0-9-9" stroke="currentColor" stroke-width="1.2"/><path d="M6 18v-2a1 1 0 0 1 1-1h.5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </div>
+        <h3 id="services-title">Services & Support <span aria-hidden="true">🔧</span></h3>
+        <ul class="lc-bullets contact-bullets lively">
+          <li><span class="dot">•</span> Premium Consultation Desk <span class="mini">✅</span></li>
+          <li><span class="dot">•</span> Wholesale Support Desk <span class="mini">📞</span></li>
+          <li><span class="dot">•</span> On-site Warranty & Demo <span class="mini">🛠️</span></li>
+        </ul>
+        <p class="about-note">Custom PC builds, in-store diagnostics and bulk orders supported by our expert technicians.</p>
+      </div>
+
+      <!-- RIGHT BOTTOM: Gaming & High-End PCs -->
+      <div class="lc-card about-box reveal" role="article" aria-labelledby="gaming-title">
+        <div class="about-icon" aria-hidden="true">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="7" width="19" height="10" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M8 10v4" stroke="currentColor" stroke-width="1.2"/><path d="M6 12h4" stroke="currentColor" stroke-width="1.2"/><path d="M16 11h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3 id="gaming-title">Gaming & High-End PCs <span class="badge small">Pro Builds</span> <span aria-hidden="true">🎮</span></h3>
+        <ul class="lc-bullets contact-bullets lively">
+          <li><span class="dot">•</span> Custom Gaming Rigs <span class="mini">🔥</span></li>
+          <li><span class="dot">•</span> Graphics Workstations <span class="mini">🎨</span></li>
+          <li><span class="dot">•</span> Content Creation PCs <span class="mini">✂️</span></li>
+          <li><span class="dot">•</span> Business Desktops <span class="mini">💼</span></li>
+        </ul>
+        <p class="about-note">100% genuine components with warranty and expert assembly & support.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- COMPONENTS -->
+<!-- ================= COMPONENTS (FINAL PURPLE RGB GAMING VERSION — WITH MONITOR CARD) ================= -->
+<section id="components" class="centered" aria-labelledby="components-heading" style="background:var(--components-bg);">
+  <div class="container">
+    <h2 id="components-heading">Components</h2>
+    <p class="lead">High-end parts for gamers, creators & professionals</p>
+  </div>
+
+  <div class="components-grid" role="list" aria-label="Components list" style="margin-top:1.3rem;">
+
+
+    <!-- GPU -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/bMj9gf8x/PNY-Ge-Force-RTX-4070-GPU-12-GB-XLR8-Gaming-VERTO-EPIC-X-RGB-Triple-Fan-DLSS-3-Graphics-Card-b9868c6.jpg" 
+             alt="Graphics Card - RTX 4070">
+      </div>
+      <div class="comp-body">
+        <h3>Graphics Cards (GPUs)</h3>
+        <p>NVIDIA Rtx 40 & 50 series and AMD GPUs for gaming, editing and AI workloads.</p>
+        <p class="brand-list"><strong>Brands:</strong> NVIDIA · AMD Radeon</p>
+      </div>
+    </article>
+
+
+    <!-- PC CASE -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/nqrXfWj0/images.jpg" 
+             alt="PC Case">
+      </div>
+      <div class="comp-body">
+        <h3>PC Cases</h3>
+        <p>High-airflow, tempered-glass and RGB PC cases.</p>
+        <p class="brand-list"><strong>Brands:</strong> NZXT · Lian Li · Corsair</p>
+      </div>
+    </article>
+
+
+    <!-- RAM -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/WpBrqrjB/ram-2-1655868000270.jpg" 
+             alt="RAM">
+      </div>
+      <div class="comp-body">
+        <h3>Memory (RAM)</h3>
+        <p>DDR4 & DDR5 RAM for fast, stable performance.</p>
+        <p class="brand-list"><strong>Brands:</strong> Crucial · Corsair · Adata/XPG · G-Skill</p>
+      </div>
+    </article>
+
+
+    <!-- PROCESSOR -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/n5df3b4/download.jpg" 
+             alt="Processor">
+      </div>
+      <div class="comp-body">
+        <h3>Processors</h3>
+        <p>Intel & AMD CPUs for gaming and productivity.</p>
+        <p class="brand-list"><strong>Brands:</strong> Intel · AMD Ryzen</p>
+      </div>
+    </article>
+
+
+    <!-- MOTHERBOARD -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/nMsb6QTq/hero.png" 
+             alt="Motherboard">
+      </div>
+      <div class="comp-body">
+        <h3>Motherboards</h3>
+        <p>Latest chipset motherboards for all PC builds.</p>
+        <p class="brand-list"><strong>Brands:</strong> ASUS · GIGABYTE · MSI · ASRock</p>
+      </div>
+    </article>
+
+
+    <!-- STORAGE / PSU / COOLING -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/BV07zfk4/asus-aio-cat-2021.jpg" 
+             alt="Storage, PSUs & Cooling">
+      </div>
+      <div class="comp-body">
+        <h3>Storage, PSUs & Cooling</h3>
+        <p>NVMe SSDs, high-efficiency PSUs & cooling solutions.</p>
+        <p class="brand-list"><strong>Brands:</strong> Cooler Master · Corsair · Deepcool · NZXT</p>
+      </div>
+    </article>
+
+
+    <!-- MONITORS (NEW CARD 7) -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/pjh6KRSL/download-1.jpg" 
+             alt="Monitor">
+      </div>
+      <div class="comp-body">
+        <h3>Monitors</h3>
+        <p>High-refresh, color-accurate and curved displays.</p>
+        <p class="brand-list"><strong>Brands:</strong> BenQ · MSI · ASUS · Samsung · LG · AOC · Dell</p>
+      </div>
+    </article>
+    <!-- MICROSOFT SURFACE -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/yB6mMWkw/family-non-color-hero-fy25.jpg" 
+             alt="Microsoft Surface">
+      </div>
+      <div class="comp-body">
+        <h3>Microsoft Surface</h3>
+        <p>Premium 2-in-1 devices for productivity, mobility, and creativity.</p>
+        <p class="brand-list"><strong>Brands:</strong> Microsoft Surface Pro · Surface Go · Surface Laptop</p>
+      </div>
+    </article>
+
+    <!-- LENOVO TABLETS -->
+    <article class="comp-card comp-rgb reveal" role="listitem">
+      <div class="comp-media">
+        <img src="https://i.ibb.co/zhZHM89v/02-Q4li38yb-USTx-C4c-Tpa3l-F-3.webp" 
+             alt="Lenovo Tablet">
+      </div>
+      <div class="comp-body">
+        <h3>Lenovo Tablets</h3>
+        <p>Reliable Android tablets for entertainment, study, and everyday use.</p>
+        <p class="brand-list"><strong>Brands:</strong> Lenovo Tab Series · Lenovo Yoga Tablets</p>
+      </div>
+    </article>
+ </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section id="brands" class="centered" aria-labelledby="brands-heading">
+      <div class="brands-block container">
+        <h2 id="brands-heading">Brands We Sell</h2>
+        <p class="lead">We offer top brands in laptops, desktops and AIO systems.</p>
+
+        <h3 class="brands-sub">Laptop Brands</h3>
+        <div class="brands-grid" role="list" aria-label="Laptop brands">
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://i.ibb.co/My5JXV9D/195px-HP-logo-2012-svg.png" alt="HP"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://i.ibb.co/kgG7dJ6R/Lenovo-2015-svg.png" alt="Lenovo"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://i.ibb.co/tMFrzZjC/Asus-Logo.png" alt="Asus"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://i.ibb.co/50VQjLq/images.png" alt="MSI"></div>
+        </div>
+
+        <h3 class="brands-sub" style="margin-top:1.25rem">Desktop & AIO Brands</h3>
+        <div class="brands-grid" role="list" aria-label="Desktop and AIO brands">
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://i.ibb.co/kgG7dJ6R/Lenovo-2015-svg.png" alt="Lenovo"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://i.ibb.co/BHNsrmcb/Acer-Logo.png" alt="Acer"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://i.ibb.co/My5JXV9D/195px-HP-logo-2012-svg.png" alt="HP"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://i.ibb.co/tMFrzZjC/Asus-Logo.png" alt="Asus"></div>
+          <div class="brand-card" role="listitem" tabindex="0"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+<section id="contact" class="centered" aria-labelledby="contact-heading">
+  <div class="contact-container container">
+
+    <h2 id="contact-heading">Contact Us</h2>
+    <p class="lead">Let’s build your dream setup. Visit our showrooms or get a custom quote.</p>
+
+    <div class="contact-info">
+
+      <!-- EMAIL -->
+      <div class="contact-item">
+        <strong>📧 Email</strong>
+        <p><a href="mailto:leethecomputershopee@gmail.com">leethecomputershopee@gmail.com</a></p>
+      </div>
+
+      <!-- ASUS PEGASUS STORE -->
+      <div class="contact-item store-box">
+        <strong>Asus Pegasus Store</strong>
+        <address>
+          Ground Floor, Shivnandan Co-operative Housing Society,<br>
+          Showroom no. 1 &amp; 2, near Peter England,<br>
+          Sadashiv Peth, Pune 411030
+        </address>
+
+        <p><strong>📞 Phone / WhatsApp:</strong><br>
+        <a href="tel:8600168636">8600168636</a></p>
+
+        <a class="highlighted-map" href="https://maps.app.goo.gl/525rNXXKHUPALW7x7" target="_blank" rel="noopener">
+          📍 Open in Google Maps
+        </a>
+      </div>
+
+      <!-- MSI NOTEBOOKS EXCLUSIVE STORE -->
+      <div class="contact-item store-box">
+        <strong>MSI Notebooks Exclusive Store</strong>
+        <address>
+          Ground Floor, Shivnandan Co-op Housing Society No.1,<br>
+          Tilak Road, Sadashiv Peth,<br>
+          Pune 411030
+        </address>
+
+        <p><strong>📞 Phone / WhatsApp:</strong><br>
+          <a href="tel:8530308636">8530308636</a><br>
+          <a href="tel:9561019516">9561019516</a>
+        </p>
+
+        <a class="highlighted-map" href="https://maps.app.goo.gl/fKxJD8XXqAfDjfGs7" target="_blank" rel="noopener">
+          📍 Open in Google Maps
+        </a>
+      </div>
+
+      <!-- THIRD MULTIBRAND STORE -->
+      <div class="contact-item store-box">
+        <strong>Third Multibrand Store</strong>
+        <address>
+          1482, Sadashiv Peth, White House Building,<br>
+          Tilak Road, opp. Tilak Smarak Mandir,<br>
+          Pune 411030
+        </address>
+
+        <p><strong>📞 Phone / WhatsApp:</strong><br>
+          <a href="tel:7499995799">7499995799</a><br>
+          <a href="tel:9028881556">9028881556</a><br>
+          <a href="tel:02024448636">020-24448636</a>
+        </p>
+
+        <a class="highlighted-map" href="https://maps.app.goo.gl/AqgqtLPMqRjPNGjT9" target="_blank" rel="noopener">
+          📍 Open in Google Maps
+        </a>
+      </div>
+
+    </div> 
+
+  </div>
+</section>
+    
+  </body>
+  
+</html>
